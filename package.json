@@ -41,7 +41,8 @@
     "docpad-plugin-related": "2.x",
     "marked": "*",
     "bower": "~1",
-    "docpad-plugin-assets": "^2.1.2"
+    "docpad-plugin-assets": "~2.1.2",
+    "docpad-plugin-ghpages": "~2.4.3"
   },
   "devDependencies": {
     "docpad-plugin-livereload": "2.x",
