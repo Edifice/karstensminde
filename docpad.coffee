@@ -37,7 +37,7 @@ docpadConfig =
 			author: "Your Name"
 
 		# The website author's email
-			email: "your@email.com"
+			email: "info@karstensminde.dk"
 
 		# Your company's name
 			data:
@@ -45,7 +45,6 @@ docpadConfig =
 				address1: 'Hans Jensens Vej 1'
 				address2: '6771 Gredstedbro'
 				phone: '75 43 14 64'
-				email: 'info@karstensminde.dk'
 	# Helper Functions
 	# ----------------
 
