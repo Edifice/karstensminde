@@ -42,7 +42,10 @@
     "marked": "*",
     "bower": "~1",
     "docpad-plugin-assets": "~2.1.2",
-    "docpad-plugin-ghpages": "~2.4.3"
+    "grunt": "^0.4.5",
+    "grunt-relative-root": "^0.2.2",
+    "grunt-gh-pages": "^0.9.1",
+    "grunt-shell": "^1.1.1"
   },
   "devDependencies": {
     "docpad-plugin-livereload": "2.x",

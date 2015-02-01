@@ -94,6 +94,9 @@ docpadConfig =
 		personale: (database) ->
 			findSubPages(database, 'personale')
 
+	plugins:
+		cleanurls:
+			static: true
 
 # DocPad Events
 # =============
