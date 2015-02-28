@@ -1,7 +1,11 @@
 (function() {
   $(function() {
-    $('pre').addClass('prettyprint');
-    return prettyPrint();
+    var tel;
+    if (!Modernizr.touch) {
+      tel = $('a[href^=tel]');
+      tel.parent().append(tel.text());
+      return tel.remove();
+    }
   });
 
 }).call(this);
