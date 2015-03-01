@@ -60,20 +60,29 @@ a, a:link
 
 .box
 	background-color box-color
-	padding 10px
+	padding 25px
 	margin-bottom 20px
 	border-radius 4px
 	h1, h2
 		color green
 		&:first-child
 			margin-top 2px
-	&.extra
+	img, table
+		width 100%
+	&.box-extra
 		background-color #566f44
 		h2
 			color box-color
 		img
 			width 100%
 			margin 10px 0
+	&.box-sm
+		padding 15px
+
+article
+	margin-bottom 20px
+.row:last-child article
+	margin-bottom 0
 
 table
 	tfoot, tbody
@@ -85,6 +94,8 @@ footer
 	background-color green
 	color #fff !important
 
+.price-table td:nth-child(2)
+	text-align right
 
 
 // Custom navbar

@@ -107,12 +107,12 @@ html(lang="en")
 				.col-xs-12.col-sm-7.col-md-8.col-lg-9
 					section#content.box!= content
 				.col-xs-12.col-sm-5.col-md-4.col-lg-3
-					.box.extra
+					.box.box-sm.box-extra
 						.row
 							.col-xs-12
 								h2 Tilsyns rapport
 								img(src='/image/kontrolrapport.gif')
-					.box
+					.box.box-sm
 						h2 Kom og spis
 						p Lorem ipsum dolor sit amet
 						p Lorem
@@ -125,7 +125,8 @@ html(lang="en")
 						h2 Administration
 						p=site.data.address1
 						p=site.data.address2
-						p Tlf. #{site.data.phone}
+						p Tlf.&nbsp;
+							a(href="tel:0045#{site.data.phone.replace(' ','')}") #{site.data.phone}
 						p: a(href="mailto:#{site.email}") #{site.email}
 
 		// Scripts
