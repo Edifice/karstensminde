@@ -19,4 +19,110 @@ pageOrder: 4
 		h2 Kontakt os
 		p Har du spørgsmål eller lyst til at høre nærmere om et job hos karstensminde plejehjem, er du velkommen til at kontakte os på 75 43 14 64.
 		p Vi siger tak for din interesse i Karstensminde plejehjem.
-		p FORM
+
+form#job-application.custom.form-horizontal
+	.form-group
+		label.col-sm-4.col-md-3.control-label(for="applicationName") Navn:
+		.col-sm-8.col-md-9
+			input#applicationName.form-control(type="text", name="name")
+	.form-group
+		label.col-sm-4.col-md-3.control-label(for="applicationAddress") Adresse:
+		.col-sm-8.col-md-9
+			input#applicationAddress.form-control(type="text", name="address")
+	.form-group
+		label.col-sm-4.col-md-3.control-label(for="applicationCity") By og postnr.:
+		.col-sm-8.col-md-9
+			input#applicationCity.form-control(type="text", name="city")
+	.form-group
+		label.col-sm-4.col-md-3.control-label(for="applicationPhone") Telefon / mobil:
+		.col-sm-8.col-md-9
+			input#applicationPhone.form-control(type="text", name="phone")
+	.form-group
+		label.col-sm-4.col-md-3.control-label(for="applicationEmail") E-mail:
+		.col-sm-8.col-md-9
+			input#applicationEmail.form-control(type="email", name="email")
+	.form-group
+		label.col-sm-4.col-md-3.control-label(for="applicationAge") Alder:
+		.col-sm-8.col-md-9
+			input#applicationAge.form-control(type="text", name="age")
+	.form-group
+		label.col-sm-5.col-md-3.control-label Vælg arbejdstidspunkt
+		.col-sm-7.col-md-9
+			.checkbox
+				label
+					input(type="checkbox", name="work-time", value="Morgen")
+					|Morgen
+			.checkbox
+				label
+					input(type="checkbox", name="work-time", value="Middag")
+					|Middag
+			.checkbox
+				label
+					input(type="checkbox", name="work-time", value="Aften")
+					|Aften
+			.checkbox
+				label
+					input(type="checkbox", name="work-time", value="Nat")
+					|Nat
+
+	.form-group
+		label.col-sm-5.col-md-3.control-label Kørekort
+		.col-sm-7.col-md-9
+			.radio
+				label
+					input(type="radio", name="driver-license", value="Ja")
+					|Ja
+			.radio
+				label
+					input(type="radio", name="driver-license", value="Nej", checked)
+					|Nej
+	.form-group
+		label.col-sm-5.col-md-3.control-label Hvilket transportmiddel har du selv
+		.col-sm-7.col-md-9
+			.checkbox
+				label
+					input(type="checkbox", name="transport", value="Bil")
+					|Bil
+			.checkbox
+				label
+					input(type="checkbox", name="transport", value="Knallert")
+					|Knallert
+			.checkbox
+				label
+					input(type="checkbox", name="transport", value="Cykel")
+					|Cykel
+			.checkbox
+				label
+					input(type="checkbox", name="transport", value="Off.transport")
+					|Off.transport
+	p Hvor mange timer ønsker du beskæftigelse ugentlig.
+	.form-group
+		label.col-sm-5.col-md-3.control-label(for="applicationDailyHoursMin") Minimum
+		.col-sm-3.col-md-2
+			input#applicationDailyHoursMin.form-control(type="number", name="daily-hours-min")
+	.form-group
+		label.col-sm-5.col-md-3.control-label(for="applicationDailyHoursMax") Maximum
+		.col-sm-3.col-md-2
+			input#applicationDailyHoursMax.form-control(type="number", name="daily-hours-max")
+	hr
+	h3 Tidligere beskæftigelse:
+	.row
+		label.col-sm-5.col-md-3.control-label(for="applicationTextarea1") Arbejdsgiver
+		.col-sm-8.col-md-9
+			textarea#applicationTextarea1.form-control(name="employers")
+	br
+	.row
+		label.col-sm-5.col-md-3.control-label(for="applicationTextarea2") Evt. erfaring inden for samme fag:
+		.col-sm-8.col-md-9
+			textarea#applicationTextarea2.form-control(name="experience")
+	hr
+	.row
+		label.col-sm-5.col-md-3.control-label(for="applicationTextarea3") Evt. bemærkninger
+		.col-sm-8.col-md-9
+			textarea#applicationTextarea3.form-control(name="comment")
+	br
+	.form-group
+		.col-xs-12.text-right
+			button.btn.btn-success
+				i &nbsp;
+				span Send
