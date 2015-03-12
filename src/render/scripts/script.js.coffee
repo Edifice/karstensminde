@@ -74,4 +74,10 @@ $ ->
 			e.preventDefault()
 			e.stopPropagation()
 			false
+
+	# Fancybox init
+	fancy = $ ".fancybox"
+	if fancy
+		fancy.fancybox()
+
 	@

@@ -6,8 +6,162 @@ pageOrder: 1
 
 .row
 	article.col-sm-12
-		p Følgende lejemål udlejeres:
-		p Bilag 2-5 (grundrids, areal og priser)
-		p Bilag 6: billedgennemgang (opstilling af med billeder, tekst og m2)
-		p Følgende lejemål er ledige pr. 01.03.2015:
-		p Kontakt os for nærmere information.
+		#carousel.carousel.slide(data-ride='carousel', data-interval='false')
+			// Indicators
+			ol.carousel-indicators
+				li.active(data-target='#carousel', data-slide-to='0')
+				li(data-target='#carousel', data-slide-to='1')
+				li(data-target='#carousel', data-slide-to='2')
+				li(data-target='#carousel', data-slide-to='3')
+			// Wrapper for slides
+			.carousel-inner(role='listbox')
+				.item.active
+					img(src='/image/lej_1.png', alt='lej_1')
+					.carousel-caption
+						h3 Lejlighed 1
+						p
+							| Areal: 78 m²
+							br
+							| Månedlige ydelser
+							br
+							| Husleje kr. 7170,00
+							br
+							| Varme kr. 632,00
+							br
+							| El kr. 100,00
+							br
+							| Vedligehold kr. 286,00
+							br
+							| Depositum ? kr.
+				.item
+					img(src='/image/lej_2-7_9-14.png', alt='lej_2-7_9-14')
+					.carousel-caption
+						h3 Lejlighed 2-7 og 9–14
+						p
+							| Areal: 74,2 m²
+							br
+							| Månedlige ydelser
+							br
+							| Husleje kr. 6800,00
+							br
+							| Varme kr. 600,00
+							br
+							| El: efter forbrug
+							br
+							| Vedligehold kr. 271,00
+							br
+							| Depositum kr. 7771,00
+				.item
+					img(src='/image/lej_8.png', alt='lej_8')
+					.carousel-caption
+						h3 Lejlighed 8
+						p
+							| Areal: 67 m²
+							br
+							| Månedlige ydelser
+							br
+							| Husleje kr. 6158,00
+							br
+							| Varme kr. 543,00
+							br
+							| El kr. 100,00
+							br
+							| Vedligehold kr. 245,00
+							br
+							| Depositum kr. ?
+				.item
+					img(src='/image/lej_15.png', alt='lej_15')
+					.carousel-caption
+						h3 Lejlighed 15
+						p
+							| Areal: 100 m²
+							br
+							| Månedlige ydelser
+							br
+							| Husleje kr. 9190,00
+							br
+							| Varme kr. 810,00
+							br
+							| El kr. 120,00
+							br
+							| Vedligehold kr. 366,00
+							br
+							| Depositum kr. ?
+
+			// Controls
+			a.left.carousel-control(href='#carousel', role='button', data-slide='prev')
+				span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+				span.sr-only Previous
+			a.right.carousel-control(href='#carousel', role='button', data-slide='next')
+				span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+				span.sr-only Next
+
+		br
+		table.table.table-bordered
+			tr
+				th Lejlighednr.
+				td: b 1
+				td: b 2
+				td: b 3-6 & 10-13
+				td: b 7
+				td: b 8
+				td: b 9
+				td: b 14
+				td: b 15
+			tr
+				th Lejlighedsareal<br>m&sup2;
+				td 53
+				td 50
+				td 49
+				td 50
+				td 42
+				td 50
+				td 51
+				td 75
+			tr
+				th Andel i<br>fælles boligarealer<br>(ophold m.v.)<br>m&sup2;
+				td 8,5
+				td 8,5
+				td 8,5
+				td 8,5
+				td 8,5
+				td 8,5
+				td 8,5
+				td 8,5
+			tr
+				th Andel i<br>adgangsarealer<br>m&sup2;
+				td 16,6
+				td 16,6
+				td 16,6
+				td 16,6
+				td 16,6
+				td 16,6
+				td 16,6
+				td 16,6
+			tr
+				th Brutto etageareal<br>m&sup2;
+				td 78,1
+				td 75,1
+				td 74,1
+				td 75,1
+				td 67,1
+				td 75,1
+				td 76,1
+				td 100,1
+			tr
+				th Boligstøtte-areal<br>m&sup2;
+				td 78,1
+				td 74,1
+				td 74,1
+				td 74,1
+				td 67,1
+				td 74,1
+				td 76,1
+				td 100,1
+		br
+		h2 Indre Billeder
+		.row
+			.col-xs-6.col-sm-6.col-md-3: a.fancybox(rel="group", href="/image/flat1.jpg"): img(src="/image/flat1.min.jpg", alt="inside1")
+			.col-xs-6.col-sm-6.col-md-3: a.fancybox(rel="group", href="/image/flat2.jpg"): img(src="/image/flat2.min.jpg", alt="inside2")
+			.col-xs-6.col-sm-6.col-md-3: a.fancybox(rel="group", href="/image/flat3.jpg"): img(src="/image/flat3.min.jpg", alt="inside1")
+			.col-xs-6.col-sm-6.col-md-3: a.fancybox(rel="group", href="/image/flat4.jpg"): img(src="/image/flat4.min.jpg", alt="inside2")
