@@ -24,11 +24,14 @@
   };
 
   $(function() {
-    var fancy, tel;
+    var fancy;
     if (!Modernizr.touch) {
-      tel = $('a[href^=tel]');
-      tel.parent().append(tel.text());
-      tel.remove();
+      $('a[href^=tel]').each(function() {
+        var $this;
+        $this = $(this);
+        $this.parent().append($this.text());
+        return $this.remove();
+      });
       $("form.custom").submit(function(e) {
         var createHtmlApplication, self;
         self = $(this);
