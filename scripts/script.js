@@ -62,12 +62,12 @@
               message: {
                 html: createHtmlApplication(),
                 subject: "Ny jobansøgninger",
-                from_email: "ulla@abc-ren.dk",
-                from_name: "ABC Rengøring og Hjemmepleje",
+                from_email: "info@karstensminde.dk",
+                from_name: "Karstensminde",
                 to: [
                   {
-                    email: "kim@creabox.dk",
-                    name: "Ulla"
+                    email: "info@karstensminde.dk",
+                    name: "Karstensminde"
                   }
                 ]
               }
